@@ -32,6 +32,6 @@ public class User
         static void Check(string pattern, string value, string field) =>
             _ = Regex.IsMatch(value, pattern)
                 ? true
-                : throw new ArgumentException($"Поле {field} содержит недопустимые символы");
+                : throw new ArgumentException($"The field {field} contains invalid characters");
     }
 }
